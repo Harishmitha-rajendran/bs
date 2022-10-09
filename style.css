@@ -1,0 +1,150 @@
+html{
+scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding:0;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.navbar{
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+body > header > nav > div > a{
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color:white;
+    border-bottom: 2px solid transparent;
+    margin: 0px 10px;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+    border-bottom: 2px solid #0B5ED7 ;
+    transition: 1s;
+}
+.navbar ul li{
+    display: flex;
+    justify-content: center;
+}
+
+
+#home{
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)),url(images/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home h1{
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #CCC,
+                0px 2px 0px #CCC,
+                0px 3px 0px #CCC,
+                0px 4px 0px #CCC,
+                0px 5px 0px #CCC,
+                0px 6px 0px #CCC;
+}
+#home input{
+    width: 40%;
+    height: 31px;
+    padding:0.28rem 0.5rem;
+    font-size: 0.885rem;
+    border: none;
+    outline: none;  
+    border-radius:0.25rem;
+    background-color: white; 
+}
+
+
+
+#about{
+    background: linear-gradient(#ea1d6f,#ea1d6f);
+}
+#about p,#about h1{
+    color: white;
+}
+
+
+#products{
+   
+}
+#products img{
+    height: 130px;
+    width: 130px;
+}
+.card{
+    height: 150px;
+    width: 190px;
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    margin:20px 40px !important;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+#products > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contact{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+#contact input,#contact textarea{
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 5px;
+    background-color: #CCC;
+}
+
+
+
+footer{
+    height: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.806);
+    color: white;
+    text-align: center;
+}
+
+@media (max-width:425px) {
+    #products > div > div > div:nth-child(n)
+    {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    #contact > div > div > div:nth-child(2){
+        margin-top: 30px;
+    }
+}
+
+
